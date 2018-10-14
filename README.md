@@ -3,7 +3,7 @@ TLDR; SmartThings device handler and SmartApp to convert a Z-Wave relay into a g
 
 The motivation for this project was the lack of (garage) door support by Google's Assistant.
 
-I very much want to say "hey Google, open the garage door" while I'm still half a block from home and have the door open and waiting for me when I get there. I also want the opener to be smart enough not to just "push the button" and actually close the door if it was already open. Finally, I want this to be completely hands-off because I normally commute via motorcycle; meaning my phone is in my pocket, and I am talking to it though the Bluetooth connected headset in my helmet.
+I very much want to say "hey Google, open the garage door" while I'm still half a block from home, and have the door open and waiting for me when I get there. I also want the opener to be smart enough not to just "push the button" and actually close the door if it was already open. Finally, I want this to be completely hands-off because I normally commute via motorcycle; meaning my phone is in my pocket, and I am talking to it though the Bluetooth connected headset in my helmet.
 
 I know there are some other solutions out there. Some work with MyQ, some work with Linear's GD00Z-4. But, I had a simple Linear FS20Z-1 relay just laying around looking for a problem to solve. So I wrote a two part solution that can work with any Z-Wave relay and any door opener.
 
