@@ -9,7 +9,7 @@ I know there are some other solutions out there. Some work with MyQ, some work w
 
 The first part of the solution is a custom Z-Wave Momentary Relay device handler. I used the SmartSense Virtual Momentary Contact Switch by SmartThings as a starting point.
 
-This device handler has been extended to modify its behavior depending on the open/closed state of a door. The handler keeps track of the current garage door state (as provided by the sister app); and, if the relay is told to "turn off" (close the door) when garage door is already closed, then it will not cycle the relay. Same idea when the door is open, a command to "turn on" the relay (open the door) will not cycle the relay.
+I extended this device handler to modify its behavior depending on the open/closed state of a door. The handler keeps track of the current garage door state (as provided by the sister app); and, if the relay is told to "turn off" (close the door) when garage door is already closed, then it will not cycle the relay. Same idea when the door is open, a command to "turn on" the relay (open the door) will not cycle the relay.
 
 I assigned this device handler to my Linear FS20Z-1 relay, which is connected in parallel to my garage door opener's push button. Then I renamed the relay "Garage Door Button." Note that at this point, the push button in the SmartThings app would not activate the door. This is because the garage door's state is unknown by the handler until after the next step.
 
